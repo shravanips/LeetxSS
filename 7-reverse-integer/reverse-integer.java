@@ -13,11 +13,11 @@ class Solution {
             // overflow
             if (reversed > Integer.MAX_VALUE / 10 || (reversed == Integer.MAX_VALUE / 10 && digit > 7)) {
                 return 0;
-            } 
+            } // error in the greater than sign for digit
 
 
             // underflow - correct now 
-            if (reversed < Integer.MIN_VALUE / 10 || (reversed == Integer.MIN_VALUE / 10 && digit <-8 )) {
+            if (reversed < Integer.MIN_VALUE / 10 || (reversed == Integer.MIN_VALUE / 10 && digit < -8 )) {
                 return 0;
             }
 
